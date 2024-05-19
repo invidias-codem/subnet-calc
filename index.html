@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Conversion & Subnet Mask Tool</title>
+  <link rel="stylesheet" href="style.css">  </head>
+<body>
+  <div class="container">
+    <h1>Binary Conversion & Subnet Mask Tool</h1>
+    <p class="description">This tool helps you convert between binary and decimal values, and validate potential subnet masks.</p>
+    <div class="input-section">
+      <label for="conversionType">Conversion Type:</label>
+      <select name="conversionType" id="conversionType">
+        <option value="binary">Binary to Decimal</option>
+        <option value="decimal">Decimal to Binary</option>
+        <option value="dottedDecimal">Dotted Decimal to Binary</option>
+      </select>
+      <br>
+      <label for="userInput">Enter your value:</label>
+      <input type="text" id="userInput" name="userInput">
+      <br>
+      <button type="button" onclick="convertValue()">Convert</button>
+      <p id="result"></p>
+    </div>
+  </div>
+  <div id="subnetMaskSection">
+    <p>Enter IP address:</p>
+    <input type="text" id="ipAddress" placeholder="Enter IP address">
+    <br>
+    <button id="subnetMaskButton">Calculate Subnet Mask</button>
+  </div>
+  <br>
+  <div id="result"></div>
+  <h2>Subnet Chart</h2>
+  <table id="subnetClassTable">
+    <tbody>  <thead>
+          <tr>
+              <th>Class</th>
+              <th>Network Range</th>
+              <th>Subnet Mask</th>
+              <th>Network Bits</th>
+              <th>Host Bits</th>
+          </tr>
+      </thead>
+    </tbody>
+  </table>
+  <script src="conversions.js"></script>
+  <script src="subnetCalc.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
